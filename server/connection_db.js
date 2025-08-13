@@ -1,3 +1,5 @@
+//Here goes the connection to the database
+
 import mysql from 'mysql2/promise';
 
 const pool = mysql.createPool({
@@ -20,5 +22,3 @@ async function testDbConnection() {
         console.error('Error connecting to the database:', error.message);
     }
 }
-
-testDbConnection()

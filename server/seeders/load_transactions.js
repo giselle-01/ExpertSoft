@@ -6,7 +6,7 @@ import csv from 'csv-parser';
 import { pool } from "../connection_db.js";
 
 //Here we exported a function to load transactions to the database
-export async function loadtransactionsDb() {
+export async function loadTransactionsDb() {
     const filePath = path.resolve('server/data/02_data_transactions.csv'); //File path with csv transactions data
     const transactions = [];
 
