@@ -5,7 +5,10 @@ const pool = mysql.createPool({
     user: 'admin',
     port: '3306',
     password: 'Qwe.123*',
-    database: 'expert_soft'
+    database: 'expert_soft',
+    connectionLimit: 10,
+    waitForConnections: true,
+    queueLimit: 0
 });
 
 async function testDbConnection() {
