@@ -7,7 +7,7 @@ import { pool } from "../connection_db.js";
 
 //Here we exported a function to load transactions to the database
 export async function loadtransactionsDb() {
-    const filePath = path.resolve('server/data/03_data_transactions.csv'); //File path with csv transactions data
+    const filePath = path.resolve('server/data/02_data_transactions.csv'); //File path with csv transactions data
     const transactions = [];
 
     //Logic to enter transactions data from the CSV file into the database
